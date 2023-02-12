@@ -4,15 +4,335 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/main.css" />
     <title>Document</title>
   </head>
   <body>
     <div class="wrapper">
-      <header></header>
-      <main></main>
+      <!-- header -->
+
+      <header id="header">
+        <div class="container header__container">
+          <div class="header__ln-container">
+            <a class="header__logo" href="#">
+              <img class="header__logo" src="./img/logo.svg" alt="logo" />
+            </a>
+            <nav class="header__navbar">
+              <ul class="header__list">
+                <li class="header__item">
+                  <a class="header__link" href="./Pricing/pricing.html"
+                    >Pricing</a
+                  >
+                </li>
+                <li class="header__item">
+                  <a class="header__link" href="#">About</a>
+                </li>
+                <li class="header__item">
+                  <a class="header__link" href="#">Contact</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <button class="header__btn" type="submit">Schedule a Demo</button>
+          <img class="header__menu" src="./img/menu.svg" alt="menu" />
+        </div>
+      </header>
+
+      <!-- main -->
+
+      <main>
+        <!-- first section -->
+
+        <section id="hero">
+          <div class="container hero__container">
+            <img class="hero__img" src="./img/hero__phone.svg" alt="phone" />
+            <div class="hero__text-container">
+              <h2 class="hero__title">
+                Start building with our APIs for absolutely free.
+              </h2>
+              <form
+                class="hero__form"
+                action="https://jsonplaceholder.typicode.com/users"
+                method="post"
+              >
+                <div class="hero__input-btn">
+                  <input
+                    class="hero__input"
+                    type="email"
+                    id="deflabel"
+                    name="email"
+                    placeholder="Enter email address"
+                    required
+                  />
+                  <button class="hero__btn" type="submit">
+                    Schedule a Demo
+                  </button>
+                </div>
+              </form>
+              <div class="hero__subtext">
+                <p class="hero__text">Have any questions?</p>
+                <a class="hero__sublink" href="#">Contact us</a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- next section -->
+
+        <section id="who">
+          <div class="container who__container">
+            <div class="who__text-container">
+              <h2 class="who__title">Who we work with</h2>
+              <p class="who__text">
+                Today, millions of people around the world have successfully
+                connected their accounts to apps they love using our API. We
+                provide developers with the tools they need to create easy and
+                accessible experiences for their users.
+              </p>
+              <a class="who__btn" href="#">About us</a>
+            </div>
+            <div class="who__lists">
+              <ul class="who__list">
+                <li class="who__item">
+                  <a
+                    class="who__link"
+                    href="https://www.tesla.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    ><img
+                      class="who__img"
+                      src="./img/who-first-img.svg"
+                      alt="tesla"
+                  /></a>
+                </li>
+                <li class="who__item">
+                  <a
+                    class="who__link"
+                    href="https://www.microsoft.com/ru-ru"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    ><img
+                      class="who__img"
+                      src="./img/who-second-img.svg"
+                      alt="microsoft"
+                  /></a>
+                </li>
+                <li class="who__item">
+                  <a
+                    class="who__link"
+                    href="https://www.hp.com/kz-ru/home.html"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    ><img
+                      class="who__img"
+                      src="./img/who-third-img.svg"
+                      alt="hp"
+                  /></a>
+                </li>
+              </ul>
+
+              <!--  -->
+
+              <ul class="who__list" style="margin-top: 29px">
+                <li class="who__item">
+                  <a
+                    class="who__link"
+                    href="https://www.oracle.com/cis/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    ><img
+                      class="who__img"
+                      src="./img/who-fourth-img.svg"
+                      alt="oracle"
+                  /></a>
+                </li>
+                <li class="who__item">
+                  <a
+                    class="who__link"
+                    href="https://www.google.ru/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    ><img
+                      class="who__img"
+                      src="./img/who-fifth-img.svg"
+                      alt="google"
+                  /></a>
+                </li>
+                <li class="who__item">
+                  <a
+                    class="who__link"
+                    href="https://www.nvidia.com/ru-ru/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    ><img
+                      class="who__img"
+                      src="./img/who-sixth-img.svg"
+                      alt="nvidia"
+                  /></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- next section -->
+
+        <section id="ez">
+          <div class="container ez__container">
+            <img class="ez__img" src="./img/easy__img.svg" alt="code" />
+            <div class="ez__text-container">
+              <h2 class="ez__title">Easy to implement</h2>
+              <p class="ez__text">
+                Our API comes with just a few lines of code. You'll be up and
+                running in no time. We built our documentation page to integrate
+                payments functionality with ease.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- next section -->
+
+        <section class="s1mple">
+          <div class="container s1mple__container">
+            <div class="s1mple__text-container">
+              <h2 class="s1mple__title">Simple UI & UX</h2>
+              <p class="s1mple__text">
+                Our pre-built form is easy to integrate in your app or website's
+                checkout flow and designed to optimize conversion.
+              </p>
+            </div>
+            <div class="s1mple__img-container">
+              <img
+                class="s1mple__phone-ttl-pay-img"
+                src="./img/s1mple__phone-face-img.svg"
+                alt="phone face"
+              />
+              <img
+                class="s1mple__phone-succcessfull-img"
+                src="./img/s1mple__phone-back-img.svg"
+                alt="phone back"
+              />
+            </div>
+          </div>
+        </section>
+
+        <!-- next section -->
+
+        <section id="pbc">
+          <div class="container pbc__container">
+            <ul class="pbc__list">
+              <li class="pbc__item">
+                <h2 class="pbc__title">Personal Finances</h2>
+                <p class="pbc__text">
+                  Consolidate financial data from multiple sources and
+                  categorize transactions up to 2 years of history. Analyze
+                  reports to reconcile activities in your account.
+                </p>
+              </li>
+              <li class="pbc__item">
+                <h2 class="pbc__title">Banking & Coverage</h2>
+                <p class="pbc__text">
+                  With our platform, you can speed up account onboarding and
+                  support ongoing payments for checking, savings, credit card,
+                  and brokerage accounts.
+                </p>
+              </li>
+              <li class="pbc__item">
+                <h5 class="pbc__title">Consumer Payments</h5>
+                <p class="pbc__text">
+                  It's easier to set up secure bank payments with us through a
+                  flow designed with the user experience in mind. Customers
+                  could instantly authenticate their account.
+                </p>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- next section -->
+
+        <section id="ls">
+          <div class="container ls__container">
+            <h2 class="ls__title">Ready to start?</h2>
+            <form
+              class="hero__form ls__form"
+              action="https://jsonplaceholder.typicode.com/users"
+              method="post"
+            >
+              <div class="hero__input-btn ls__input-btn">
+                <input
+                  class="hero__input ls__input"
+                  type="email"
+                  id="deflabel"
+                  name="email"
+                  placeholder="Enter email address"
+                  required
+                />
+                <button class="hero__btn ls__btn" type="submit">
+                  Schedule a Demo
+                </button>
+              </div>
+            </form>
+          </div>
+        </section>
+      </main>
     </div>
 
-    <footer></footer>
+    <footer id="footer">
+      <div class="container footer__container">
+        <div class="footer__logo-navbar-container">
+          <a class="header__logo footer__logo" href="#">
+            <img
+              class="header__logo footer__logo"
+              src="./img/logo2.svg"
+              alt="logo"
+            />
+          </a>
+          <nav class="header__navb footer__navbar">
+            <ul class="header__list footer__list">
+              <li class="header__item footer__item">
+                <a class="header__link footer__link" href="#">Pricing</a>
+              </li>
+              <li class="header__item footer__item">
+                <a class="header__link footer__link" href="#">About</a>
+              </li>
+              <li class="header__item footer__item">
+                <a class="header__link footer__link" href="#">Contact</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <ul class="footer__img-list">
+          <li class="footer__img-item">
+            <a
+              href="https://www.facebook.com/campaign/landing.php?campaign_id=11554070363&extra_1=s%7Cc%7C477437435741%7Ce%7Cfacebook%7C&placement=&creative=477437435741&keyword=facebook&partner_id=googlesem&extra_2=campaignid%3D11554070363%26adgroupid%3D112923417056%26matchtype%3De%26network%3Dg%26source%3Dnotmobile%26search_or_content%3Ds%26device%3Dc%26devicemodel%3D%26adposition%3D%26target%3D%26targetid%3Dkwd-541132862%26loc_physical_ms%3D1028523%26loc_interest_ms%3D%26feeditemid%3D%26param1%3D%26param2%3D&gclid=CjwKCAiAlp2fBhBPEiwA2Q10D8TLIKsH2Q73rV6qJU0voyAqFKXHMr5PpbQLavgAPAmhxhJ0Puw5zhoCQOMQAvD_BwE"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="./img/footer__facebook.svg" alt="facebook" />
+            </a>
+          </li>
+          <li class="footer__img-item">
+            <a
+              href="https://twitter.com/home"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="./img/footer__twitter.svg" alt="twitter" />
+            </a>
+          </li>
+          <li class="footer__img-item">
+            <a
+              href="https://www.linkedin.com/feed/?trk=onboarding-landing"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="./img/footer__linkedin.svg" alt="linkedin" />
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
   </body>
 </html>

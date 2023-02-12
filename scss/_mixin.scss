@@ -1,20 +1,131 @@
-@mixin flexA{
+@mixin flexA {
   display: flex;
   align-items: center;
 }
 
-@mixin flexB{
+@mixin flexB {
   display: flex;
-  align-items:center;
+  align-items: center;
   justify-content: space-between;
 }
 
-@mixin flexC{
+@mixin flexC {
   @include flexA;
   justify-content: center;
+}
+
+@mixin flexD {
+  display: flex;
+  justify-content: space-between;
+}
+
+@mixin center {
+  align-items: center;
+  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+@mixin tmc {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 @mixin mx {
   margin: 0 auto;
 }
 
+@mixin Lemail {
+  width: 445px;
+  padding: 15px 276px 15px 27px;
+  font-family: "Public Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+  color: #36536b;
+  opacity: 0.5;
+  background-color: #fbfcfe;
+  box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+  border-radius: 24px;
+}
+
+@mixin Demobtn {
+  max-width: 445px;
+  background-color: #ba4270;
+  box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+  border-radius: 24px;
+  font-family: "Public Sans";
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+  color: #fbfcfe;
+  padding: 15px 25px;
+  max-height: 48px;
+  cursor: pointer;
+  border: 0px;
+  transition: all 0.4s ease;
+
+  &:hover {
+    background-color: #da6d97;
+  }
+
+  &:active {
+    background-color: #ba4270;
+  }
+}
+
+@mixin InputDemo {
+  width: 445px;
+  font-family: "Public Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+  color: #36536b;
+  opacity: 0.5;
+  background: #fbfcfe;
+  box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+  border-radius: 24px;
+  padding: 15px 25px;
+}
+
+@mixin herotitle900 {
+  font-family: "DM Serif Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 56px;
+  text-align: center;
+  letter-spacing: -0.369231px;
+  color: #36536b;
+}
+
+@mixin wbtnstc {
+  font-family: "Public Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: -0.115385px;
+  color: #fbfcfe;
+  background-color: #1b262f;
+  padding: 15px 32px;
+  border: 1px solid #fbfcfe;
+  border-radius: 24px;
+  transition: all 0.4s ease;
+
+  &:hover {
+    color: #1b262f;
+    background-color: #ffffff;
+  }
+
+  &:active {
+    color: #fbfcfe;
+    border: 1px solid #fbfcfe;
+    background-color: #1b262f;
+  }
+}

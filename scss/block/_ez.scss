@@ -1,0 +1,64 @@
+#ez {
+  margin-top: 150px;
+  margin-bottom: 150px;
+}
+
+.ez__container {
+  @include flexD;
+}
+
+.ez__img {
+  width: 445px;
+  height: 284px;
+  background: #1b262f;
+  box-shadow: 25px 25px 80px rgba(54, 83, 107, 0.300727);
+  border-radius: 8px;
+}
+
+.ez__text-container {
+  margin-top: 100px;
+}
+
+.ez__title {
+  font-family: "DM Serif Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 56px;
+  letter-spacing: -0.369231px;
+  color: #36536b;
+  margin-bottom: 24px;
+}
+
+.ez__text {
+  font-family: "Public Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 28px;
+  color: #6c8294;
+  width: 445px;
+}
+
+@media screen and (max-width: 1015px) {
+  .ez__container {
+    flex-direction: column;
+  }
+
+  .ez__img {
+    @include center;
+    margin-bottom: 25px;
+  }
+
+  .ez__text-container {
+    @include center;
+  }
+
+  .ez__title {
+    width: 100%;
+  }
+
+  .ez__text {
+    width: 100%;
+  }
+}

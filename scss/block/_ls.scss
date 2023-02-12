@@ -1,0 +1,45 @@
+#ls {
+  margin-top: 96px;
+}
+
+.ls__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.ls__title {
+  font-family: "DM Serif Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 56px;
+  letter-spacing: -0.369231px;
+  color: #36536b;
+}
+
+.ls__input {
+  margin: 0;
+}
+
+@media screen and (max-width: 800px) {
+  .ls__container {
+    flex-direction: column;
+    @include center;
+  }
+
+  .ls__title {
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 490px) {
+  .ls__input {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .ls__btn {
+    max-width: 100%;
+    width: 100%;
+  }
+}

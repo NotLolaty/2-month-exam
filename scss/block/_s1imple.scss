@@ -1,0 +1,97 @@
+.s1mple__container {
+  @include flexD;
+}
+
+.s1mple__text-container {
+  margin-top: 200px;
+}
+
+.s1mple__title {
+  font-family: "DM Serif Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 56px;
+  letter-spacing: -0.369231px;
+  color: #36536b;
+}
+
+.s1mple__text {
+  font-family: "Public Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 28px;
+  color: #6c8294;
+  width: 445px;
+}
+
+.s1mple__img-container {
+  width: 556px;
+  @include flexD;
+}
+
+@media screen and (max-width: 1015px) {
+  .s1mple__container {
+    flex-direction: column-reverse;
+  }
+
+  .s1mple__text-container {
+    @include center;
+  }
+
+  .s1mple__img-container {
+    @include center;
+    margin-bottom: 25px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .s1mple__img-container {
+    justify-content: space-evenly;
+    max-width: 328px;
+  }
+
+  .s1mple__phone-ttl-pay-img {
+    max-width: 152px;
+  }
+
+  .s1mple__phone-succcessfull-img {
+    max-width: 152px;
+  }
+
+  .who__list {
+    width: 432px;
+    justify-content: space-between;
+  }
+
+  .who__item {
+    max-width: 100px;
+  }
+
+  .s1mple__title {
+    width: 100%;
+  }
+
+  .s1mple__text {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .s1mple__img-container {
+    justify-content: space-between;
+    max-width: 2500px;
+    width: 250px;
+  }
+
+  .s1mple__phone-ttl-pay-img {
+    max-width: 115px;
+    width: 115px;
+  }
+
+  .s1mple__phone-succcessfull-img {
+    max-width: 115px;
+    width: 115px;
+  }
+}
